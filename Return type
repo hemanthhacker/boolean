@@ -1,0 +1,11 @@
+Class solution:
+        def isvalid(self:,s:str) ->bool:
+               While(true):
+                  if'[]'in s:
+                  s=s.replace('[]', ' ') 
+                  elif '()'in s:
+                  s=s.replace('[]', '') 
+                  elif '{}'in s:
+                  s=s.replace('{}', '') 
+               else:
+                  return not s
